@@ -1,4 +1,5 @@
 # Hackathon Program-1
+# To find how many pairs of socks with maching colors are there
 
 n=int(input("Number of socks"))
 l=[]
@@ -26,6 +27,7 @@ Number of socks in pairs: 3
 ********************************************************************
 
 # Hackathon Program-2
+# grading policy of NullStack University 
 
 import math
 n=int(input("Number of students:"))
