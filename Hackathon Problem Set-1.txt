@@ -1,0 +1,55 @@
+# Hackathon Program-1
+
+n=int(input("Number of socks"))
+l=[]
+for i in range(n):
+    l.append(int(input()))
+s=set(l)
+for s in l:
+    a=l.count(s) 
+print("Number of socks in pairs",a)
+
+Output:-
+
+Number of socks:9
+10
+20
+20
+10
+10
+30
+50
+10
+20
+Number of socks in pairs: 3
+
+********************************************************************
+
+# Hackathon Program-2
+
+import math
+n=int(input("Number of students:"))
+l=[]
+for i in range(n):
+    l.append(int(input()))
+g=[]    
+for i in range(n):
+    c=l[i]/5
+    d=math.ceil(c)*5
+    if(l[i]>=38):
+        if(d-l[i]<3):
+            g.append(d)
+        if(d-l[i]>=3):
+            g.append(l[i])
+    if(l[i]<38):
+        g.append(l[i])
+print("Final grades of students:",g)    
+
+Output:-
+
+Number of students:4
+73
+67
+38
+33
+Final grades of students: [75, 67, 40, 33]

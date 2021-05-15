@@ -1,0 +1,74 @@
+# To ckeck string is palindrome or not
+
+def isPalindrome(s):
+    p=s[::-1]
+    return(p)
+s=input("Enter the string:")
+result=isPalindrome(s)
+if(result==s):
+    print(1)
+else:
+    print(0)
+
+Output:-
+
+Enter the string:abba
+1
+
+Enter the string:joker
+0
+
+********************************************************************
+
+# Program to print the reverse of array
+
+import numpy as np
+N=int(input("Size of array:"))
+l=[]
+for i in range(N):
+    l.append(int(input()))
+A= np.array(l)
+print(A[::-1])
+
+Output:-
+
+Size of array:4
+1
+2
+3
+4
+[4 3 2 1]
+
+********************************************************************
+
+# Program to ckeck it there exists K concecutive odd numbers in the array
+
+import numpy as np
+N=int(input("Size of array:"))
+K=int(input("Enter the value of K:"))
+l=[]
+for i in range(N):
+    l.append(int(input()))
+arr= np.array(l)
+for i in range(len(arr)-1):
+    if(i<len(arr)-2):
+        if(arr[i]%2!=0 and arr[i+1]%2!=0):
+            print("yes")
+            break
+        else:
+            continue
+    else:
+        print("no")
+
+Output:-
+
+Size of array:7
+Enter the value of K:3
+2
+5
+1
+5
+3
+7
+8
+yes
